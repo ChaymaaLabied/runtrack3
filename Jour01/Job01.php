@@ -7,7 +7,7 @@
     <title>My beloved JavaScript</title>
 
     <script>
-        alert("Hello Javascript!");
+        alert("My beloved Javascript!");
     </script>
 </head>
 
