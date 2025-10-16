@@ -1,0 +1,23 @@
+function estPremier(nombre) {
+  if (nombre < 2) return false; 
+
+  for (let i = 2; i <= Math.sqrt(nombre); i++) {
+    if (nombre % i === 0) {
+      return false; 
+    }
+  }
+  return true; 
+}
+
+function sommenombrespremiers(a, b) {
+  if (estPremier(a) && estPremier(b)) {
+    return a + b;
+  } else {
+    return false;
+  }
+}
+
+
+console.log(sommenombrespremiers(3, 7));  
+console.log(sommenombrespremiers(4, 7));  
+console.log(sommenombrespremiers(11, 13)); 
