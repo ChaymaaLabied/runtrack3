@@ -1,0 +1,73 @@
+:root {
+  --lp-bg: #0b1020;
+  --lp-accent: #1e00e0;
+  --lp-muted: #9aa7a0;
+}
+
+/* style par défaut (page vide) */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  background: #fff;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* un container centré */
+.card {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 28px 34px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(2, 6, 23, 0.6);
+  max-width: 680px;
+  width: calc(100% - 40px);
+  text-align: center;
+  color: var(--lp-text);
+  backdrop-filter: blur(6px);
+}
+
+/* header */
+.card h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  letter-spacing: 0.6px;
+}
+
+/* accent */
+.lp-accent {
+  color: var(--lp-accent);
+  font-weight: 700;
+}
+
+/* bouton discret */
+.card .close {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--lp-text);
+  cursor: pointer;
+}
+
+/* petit footer visuel */
+.card p {
+  color: var(--lp-muted);
+  margin: 10px 0 0;
+  font-size: 14px;
+}
