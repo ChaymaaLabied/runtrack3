@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#puzzle {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin: 20px auto;
+  border: 2px solid #000;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.empty {
+  background: #ddd;
+}
+
+#message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#restart {
+  display: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
