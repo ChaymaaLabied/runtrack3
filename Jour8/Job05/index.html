@@ -1,136 +1,129 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DocFlow</title>
-
+    <title>Runtrack JS - Showcase</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-gray-950 text-gray-100">
-    <!-- NAV -->
-    <header class="border-b border-gray-800">
-      <nav
-        class="container mx-auto flex justify-between items-center px-6 py-4"
+  <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <!-- HEADER -->
+    <header class="border-b border-gray-200 dark:border-gray-800">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <h1 class="text-xl font-bold">DocFlow</h1>
+        <div class="flex items-center gap-2 font-bold text-xl">
+          ⚡ RuntrackJS
+        </div>
 
-        <ul class="hidden md:flex gap-6 text-gray-300">
-          <li><a href="#" class="hover:text-white">Docs</a></li>
-          <li><a href="#" class="hover:text-white">API</a></li>
-          <li><a href="#" class="hover:text-white">Guides</a></li>
-          <li><a href="#" class="hover:text-white">Pricing</a></li>
-        </ul>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#" class="hover:text-blue-500">Docs</a>
+          <a href="#" class="hover:text-blue-500">Exercices</a>
+          <a href="#" class="hover:text-blue-500">Showcase</a>
+          <a href="#" class="hover:text-blue-500">Contact</a>
+        </nav>
 
         <button class="md:hidden text-2xl">☰</button>
-      </nav>
+      </div>
     </header>
 
     <!-- HERO -->
-    <section class="container mx-auto px-6 py-24 text-center">
-      <h2 class="text-4xl md:text-6xl font-bold leading-tight">
-        Build beautiful documentation faster
-      </h2>
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold">
+        Build faster with <span class="text-blue-500">Tailwind UI</span>
+      </h1>
 
-      <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
-        A modern documentation platform inspired by the best developer tools.
-        Simple, fast and customizable.
+      <p class="mt-6 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+        Une interface moderne type documentation SaaS inspirée des meilleurs
+        designs (Mintlify, Vercel, Stripe).
       </p>
 
       <div class="mt-8 flex justify-center gap-4">
         <a
-          href="#"
-          class="bg-white text-black px-6 py-3 rounded-lg font-semibold"
+          class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700"
         >
-          Get Started
+          Commencer
         </a>
-        <a href="#" class="border border-gray-700 px-6 py-3 rounded-lg">
-          View Docs
+        <a
+          class="border border-gray-300 dark:border-gray-700 px-5 py-2 rounded-lg"
+        >
+          Voir docs
         </a>
       </div>
     </section>
 
     <!-- FEATURES -->
-    <section class="container mx-auto px-6 py-20">
-      <h3 class="text-3xl font-bold text-center mb-12">Everything you need</h3>
+    <section class="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-6">
+      <div class="p-6 border rounded-xl dark:border-gray-800">
+        <div class="text-blue-500 text-2xl">⚙️</div>
+        <h3 class="font-semibold mt-3">Modulaire</h3>
+        <p class="text-gray-500 text-sm mt-2">
+          Structure claire et composants réutilisables.
+        </p>
+      </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
-          <h4 class="text-xl font-semibold mb-2">⚡ Fast Setup</h4>
-          <p class="text-gray-400">
-            Start your documentation in minutes with ready-made templates.
-          </p>
-        </div>
+      <div class="p-6 border rounded-xl dark:border-gray-800">
+        <div class="text-blue-500 text-2xl">🚀</div>
+        <h3 class="font-semibold mt-3">Rapide</h3>
+        <p class="text-gray-500 text-sm mt-2">
+          Design optimisé et responsive par défaut.
+        </p>
+      </div>
 
-        <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
-          <h4 class="text-xl font-semibold mb-2">🎨 Customizable</h4>
-          <p class="text-gray-400">
-            Fully customize your docs to match your brand identity.
-          </p>
-        </div>
-
-        <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
-          <h4 class="text-xl font-semibold mb-2">🚀 Developer Friendly</h4>
-          <p class="text-gray-400">
-            Built for developers with APIs, markdown and flexibility.
-          </p>
-        </div>
+      <div class="p-6 border rounded-xl dark:border-gray-800">
+        <div class="text-blue-500 text-2xl">🎨</div>
+        <h3 class="font-semibold mt-3">Moderne</h3>
+        <p class="text-gray-500 text-sm mt-2">
+          Style SaaS inspiré des meilleurs produits.
+        </p>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="bg-gray-900 py-20">
-      <div class="container mx-auto px-6">
-        <h3 class="text-3xl font-bold text-center mb-12">How it works</h3>
+    <!-- SHOWCASE GRID -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold mb-8">Showcase</h2>
 
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div class="text-4xl font-bold text-white">1</div>
-            <p class="mt-4 text-gray-400">Create your project</p>
-          </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          class="h-40 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600"
+        ></div>
+        <div
+          class="h-40 rounded-xl bg-gradient-to-r from-pink-500 to-red-500"
+        ></div>
+        <div
+          class="h-40 rounded-xl bg-gradient-to-r from-green-500 to-teal-500"
+        ></div>
 
-          <div>
-            <div class="text-4xl font-bold text-white">2</div>
-            <p class="mt-4 text-gray-400">Add your content</p>
-          </div>
-
-          <div>
-            <div class="text-4xl font-bold text-white">3</div>
-            <p class="mt-4 text-gray-400">Deploy instantly</p>
-          </div>
-        </div>
+        <div
+          class="h-40 rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500"
+        ></div>
+        <div
+          class="h-40 rounded-xl bg-gradient-to-r from-indigo-500 to-blue-500"
+        ></div>
+        <div
+          class="h-40 rounded-xl bg-gradient-to-r from-gray-700 to-gray-900"
+        ></div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="container mx-auto px-6 py-24 text-center">
-      <h3 class="text-3xl font-bold">Start building today</h3>
-      <p class="text-gray-400 mt-4">
-        Join developers building modern documentation.
-      </p>
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold">Prêt à continuer ?</h2>
+      <p class="text-gray-500 mt-3">Passe aux prochains jobs Tailwind.</p>
 
-      <a
-        href="#"
-        class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-lg font-semibold"
+      <button
+        class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
       >
-        Get Started Free
-      </a>
+        Continuer
+      </button>
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-gray-800 py-10">
-      <div
-        class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center"
-      >
-        <p class="text-gray-500">© 2026 DocFlow</p>
-
-        <div class="flex gap-6 text-gray-400 mt-4 md:mt-0">
-          <a href="#" class="hover:text-white">Privacy</a>
-          <a href="#" class="hover:text-white">Terms</a>
-          <a href="#" class="hover:text-white">Contact</a>
-        </div>
-      </div>
+    <footer
+      class="border-t border-gray-200 dark:border-gray-800 py-6 text-center text-sm text-gray-500"
+    >
+      © 2026 RuntrackJS
     </footer>
   </body>
 </html>
