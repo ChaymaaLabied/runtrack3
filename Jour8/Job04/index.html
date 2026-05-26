@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Création de compte</title>
+  </head>
+
+  <body
+    class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white flex flex-col min-h-screen"
+  >
+    <!-- HEADER -->
+    <header class="bg-blue-600 dark:bg-gray-800 text-white py-4 shadow-md">
+      <nav class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">job04</h1>
+
+        <ul class="flex space-x-6">
+          <li>
+            <a href="index.html" class="hover:text-yellow-300 transition">
+              Accueil
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-300 transition">
+              Inscription
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-300 transition">
+              Connexion
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-300 transition">
+              Rechercher
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main
+      class="flex-grow container mx-auto my-10 p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg max-w-2xl"
+    >
+      <h2
+        class="text-3xl font-semibold text-center mb-6 text-blue-600 dark:text-blue-400"
+      >
+        Créer un compte
+      </h2>
+
+      <form class="space-y-6">
+        <!-- Civilité -->
+        <div>
+          <label class="block font-semibold mb-2">Civilité :</label>
+
+          <div class="flex space-x-4">
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="civilite"
+                value="monsieur"
+                class="text-blue-600 focus:ring-blue-600"
+              />
+              <span>Monsieur</span>
+            </label>
+
+            <label class="flex items-center space-x-2">
+              <input
+                type="radio"
+                name="civilite"
+                value="madame"
+                class="text-blue-600 focus:ring-blue-600"
+              />
+              <span>Madame</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Nom / Prénom -->
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Prénom -->
+          <div>
+            <label class="block font-semibold mb-1" for="prenom">
+              Prénom :
+            </label>
+
+            <div class="relative">
+              <i
+                class="fa-solid fa-user absolute left-3 top-3 text-gray-400"
+              ></i>
+
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Votre prénom"
+                class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg p-2 pl-10 focus:ring focus:ring-blue-200"
+              />
+            </div>
+          </div>
+
+          <!-- Nom -->
+          <div>
+            <label class="block font-semibold mb-1" for="nom"> Nom : </label>
+
+            <div class="relative">
+              <i
+                class="fa-solid fa-user absolute left-3 top-3 text-gray-400"
+              ></i>
+
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Votre nom"
+                class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg p-2 pl-10 focus:ring focus:ring-blue-200"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Adresse -->
+        <div>
+          <label class="block font-semibold mb-1" for="adresse">
+            Adresse :
+          </label>
+
+          <div class="relative">
+            <i
+              class="fa-solid fa-location-dot absolute left-3 top-3 text-gray-400"
+            ></i>
+
+            <input
+              type="text"
+              id="adresse"
+              name="adresse"
+              placeholder="Votre adresse"
+              class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg p-2 pl-10 focus:ring focus:ring-blue-200"
+            />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block font-semibold mb-1" for="email"> Email : </label>
+
+          <div class="relative">
+            <i
+              class="fa-solid fa-envelope absolute left-3 top-3 text-gray-400"
+            ></i>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemple@email.com"
+              class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg p-2 pl-10 focus:ring focus:ring-blue-200"
+            />
+          </div>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Password -->
+          <div>
+            <label class="block font-semibold mb-1" for="password">
+              Mot de passe :
+            </label>
+
+            <div class="relative">
+              <i
+                class="fa-solid fa-lock absolute left-3 top-3 text-gray-400"
+              ></i>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="••••••••"
+                class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg p-2 pl-10 focus:ring focus:ring-blue-200"
+              />
+            </div>
+          </div>
+
+          <!-- Confirmation -->
+          <div>
+            <label class="block font-semibold mb-1" for="confirm">
+              Confirmez :
+            </label>
+
+            <div class="relative">
+              <i
+                class="fa-solid fa-lock absolute left-3 top-3 text-gray-400"
+              ></i>
+
+              <input
+                type="password"
+                id="confirm"
+                name="confirm"
+                placeholder="••••••••"
+                class="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg p-2 pl-10 focus:ring focus:ring-blue-200"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Passions -->
+        <div>
+          <label class="block font-semibold mb-2"> Vos passions : </label>
+
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                name="passion"
+                value="informatique"
+                class="text-blue-600 focus:ring-blue-600"
+              />
+              <span>Informatique</span>
+            </label>
+
+            <label class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                name="passion"
+                value="voyages"
+                class="text-blue-600 focus:ring-blue-600"
+              />
+              <span>Voyages</span>
+            </label>
+
+            <label class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                name="passion"
+                value="sport"
+                class="text-blue-600 focus:ring-blue-600"
+              />
+              <span>Sport</span>
+            </label>
+
+            <label class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                name="passion"
+                value="lecture"
+                class="text-blue-600 focus:ring-blue-600"
+              />
+              <span>Lecture</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Bouton -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Créer mon compte
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 dark:bg-black text-gray-200 py-4">
+      <div class="container mx-auto text-center">
+        <ul class="flex justify-center space-x-6">
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Accueil
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Inscription
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Connexion
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Rechercher
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
